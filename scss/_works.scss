@@ -1,0 +1,28 @@
+/* Works */
+
+.works {
+    height: 800px;
+    position: relative;
+    z-index: 2;
+    .titulo {
+        margin: 30px;
+    }
+    .works__contenedor {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        .contenedor__foto {
+            width: 300px;
+            aspect-ratio: 1/2;
+            margin: 0px 15px 30px 15px;
+            .foto {
+                width: 100%;
+                aspect-ratio: 1/2;
+                &:hover {
+                    scale: 1.05;
+                }
+            }
+        }
+    }
+}

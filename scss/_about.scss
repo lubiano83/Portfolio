@@ -1,0 +1,17 @@
+/* About */
+
+.about {
+    position: relative;
+    z-index: 2;
+    height: 800px;
+    .titulo {
+        margin: 30px;
+    }
+    .about__texto {
+        width: 100%;
+        h5 {
+            margin: 0px 30px 30px 30px;
+            text-align: justify;
+        }
+    }
+}

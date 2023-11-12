@@ -1,0 +1,77 @@
+/* Header */
+
+.header {
+    z-index: 3;
+    width: 100vw;
+    position: fixed;
+    background-color: map-get($colores, color-1);
+
+    .header__contenedor {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid map-get($colores, color-6);
+
+        .contenedor__logo {
+            color: map-get($colores, color-6);
+            margin: 10px 0px 10px 30px;
+
+            &:hover {
+                color: map-get($colores, color-4);
+            }
+        }
+
+        .navbar {
+            padding: 0px;
+            margin: 10px 30px 10px 0px;
+
+            .container-fluid {
+                background-color: map-get($colores, color-1);
+
+                .navbar-toggler {
+                    background-color: map-get($colores, color-6);
+                }
+
+                .navbar-nav {
+                    position: absolute;
+                    text-align: center;
+                }
+
+                .nav-link {
+                    color: map-get($colores, color-6);
+                    font-size: map-get($sizes, size-h5);
+                    text-transform: uppercase;
+                    background-color: map-get($colores, color-1);
+                    padding: 10px 20px 10px 20px;
+                    margin-left: -25px;
+
+                    &:hover {
+                        color: map-get($colores, color-4);
+                    }
+                }
+            }
+        }
+
+        .contenedor__links {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 30px 0px 30px;
+            gap: 15px;
+
+            .svg {
+                height: 50px;
+                width: 50px;
+                color: map-get($colores, color-6);
+
+                &:hover {
+                    scale: 1.2;
+                    color: map-get($colores, color-4);
+                }
+            }
+        }
+    }
+}

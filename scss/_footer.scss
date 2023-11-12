@@ -1,0 +1,15 @@
+/* Footer */
+
+.footer {
+    background-color: map-get($colores, color-1);
+    position: relative;
+    z-index: 3;
+    border-top: 1px solid map-get($colores, color-6);
+    h4 {
+        margin: 30px 30px 30px 30px;
+        .svg {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}

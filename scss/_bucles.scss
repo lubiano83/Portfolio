@@ -1,0 +1,29 @@
+/* Bucle For */
+
+@for $i from 1 through 8 {
+  .grid-#{$i} {
+    grid-area: grid-#{$i};
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: map-get($sizes, size-h#{$i});
+  }
+}
+
+@for $i from 1 through 4 {
+  @keyframes circulo#{$i} {
+    from {
+      transform: rotate(0deg) scale(2);
+    }
+
+    to {
+      transform: rotate(360deg) scale(2);
+    }
+  }
+}

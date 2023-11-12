@@ -1,0 +1,26 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+
+
+body {
+    color: map-get($colores, color-6);
+    background-color: map-get($colores, color-1);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: "grid-1 grid-1 grid-1" "grid-2 grid-3 grid-7" "grid-2 grid-4 grid-7" "grid-2 grid-5 grid-7" "grid-2 grid-6 grid-7" "grid-8 grid-8 grid-8";
+
+    a {
+        text-decoration: none;
+    }
+}

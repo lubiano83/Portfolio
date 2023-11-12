@@ -1,0 +1,252 @@
+/* Mobile Mixins */
+
+@mixin mobile ($min, $max) {
+    @media screen and (min-width: $min) and (max-width: $max) {
+        body {
+            grid-template-rows: repeat(6, auto);
+            grid-template-columns: 100%;
+            grid-template-areas:
+                "grid-1"
+                "grid-3"
+                "grid-4"
+                "grid-5"
+                "grid-6"
+                "grid-8"
+                
+            ;
+        }
+
+        @content;
+    }
+}
+
+/* 360px & 405px */
+@include mobile(360px, 405px) {
+    /* Header */
+    .header .header__contenedor .contenedor__logo {
+        margin: 10px 30px 10px 30px;
+    }
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 30px;
+      }
+    /* Inicio */
+    .inicio h2 {
+        font-size: 55px;
+    }
+    .inicio h2 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h2 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 {
+        font-size: 45px;
+    }
+    .inicio h3 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .header .header__contenedor .contenedor__links {
+        margin: 0px 30px 30px 30px;
+    }
+    /* Tools */
+    .tools .tools__contenedor .contenedor__foto {
+        width: 125px;
+    }
+}
+
+/* 406px & 491px */
+@include mobile(406px, 491px) {
+    /* Header */
+    .header .header__contenedor .contenedor__logo {
+        margin: 10px 30px 10px 30px;
+    }
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 30px;
+    }
+    /* Inicio */
+    .inicio h2 {
+        font-size: 64px;
+    }
+    .inicio h2 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h2 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 {
+        font-size: 56px;
+    }
+    .inicio h3 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .header .header__contenedor .contenedor__links {
+        margin: 0px 30px 30px 30px;
+    }
+    /* Tools */
+    .tools .tools__contenedor .contenedor__foto {
+        width: 125px;
+    }
+}
+
+/* 492px & 523px */
+@include mobile(492px, 523px) {
+    /* Header */
+    .header .header__contenedor .contenedor__logo {
+        margin: 10px 30px 10px 30px;
+    }
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 30px;
+      }
+    /* Inicio */
+    .inicio h2 {
+        font-size: 80px;
+    }
+    .inicio h2 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h2 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 {
+        font-size: 60px;
+    }
+    .inicio h3 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .header .header__contenedor .contenedor__links {
+        margin: 0px 30px 30px 30px;
+    }
+    /* Tools */
+    .tools .tools__contenedor .contenedor__foto {
+        width: 125px;
+    }
+}
+
+/* 524px & 545px */
+@include mobile(524px, 545px) {
+    /* Header */
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 30px;
+      }
+    /* Inicio */
+    .inicio h2 {
+        font-size: 80px;
+    }
+    .inicio h2 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h2 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 {
+        font-size: 60px;
+    }
+    .inicio h3 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    /* Tools */
+    .tools .tools__contenedor .contenedor__foto {
+        width: 125px;
+    }
+}
+
+/* 546px & 599px */
+@include mobile(546px, 599px) {
+    /* Header */
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 30px;
+      }
+    /* Inicio */
+    .inicio h2 {
+        font-size: 90px;
+    }
+    .inicio h2 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h2 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 {
+        font-size: 70px;
+    }
+    .inicio h3 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+}
+
+/* 600px & 633px */
+@include mobile(600px, 633px) {
+    /* Header */
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 30px;
+      }
+    /* Inicio */
+    .inicio h2 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h2 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+}
+
+/* 634px & 884px */
+@include mobile(634px, 884px) {
+    /* Inicio */
+    .inicio h2 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h2 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h3 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+}
+
+/* 885px & 1021px */
+@include mobile(885px, 1021px) {
+    /* Inicio */
+    .inicio h2 .span-1 {
+        margin: 0px 30px 0px 30px;
+    }
+    .inicio h2 .span-2 {
+        margin: 0px 30px 0px 30px;
+    }
+}
+
+/* 1022px & 1200px */
+@include mobile(1022px, 1200px) {
+    /* Inicio */
+    .inicio h2 .span-1 {
+        margin: 0px 0px 0px 30px;
+    }
+    .inicio h2 .span-2 {
+        margin: 0px 30px 0px 0px;
+    }
+}
+
+/* The End By lubiano83 */

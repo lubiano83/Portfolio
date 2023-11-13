@@ -18,9 +18,9 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: center;
   display: grid;
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(6, auto);
   grid-template-columns: auto 1200px auto;
-  grid-template-areas: "grid-1 grid-1 grid-1" "grid-2 grid-3 grid-8" "grid-2 grid-4 grid-8" "grid-2 grid-5 grid-8" "grid-2 grid-6 grid-8" "grid-2 grid-7 grid-8" "grid-9 grid-9 grid-9";
+  grid-template-areas: "grid-1 grid-1 grid-1" "grid-2 grid-3 grid-7" "grid-2 grid-4 grid-7" "grid-2 grid-5 grid-7" "grid-2 grid-6 grid-7" "grid-8 grid-8 grid-8";
 }
 body a {
   text-decoration: none;
@@ -164,13 +164,13 @@ h6 {
   left: 0;
   z-index: 1;
   filter: blur(5em);
-  animation: circulo1 20s linear infinite both;
+  animation: circulo1 30s linear infinite both;
 }
 .circulos .circulo {
   position: absolute;
   height: 50%;
   width: 50%;
-  animation: circulo1 20s linear infinite both;
+  animation: circulo1 30s linear infinite both;
 }
 .circulos .circulo1 {
   top: 0%;
@@ -279,6 +279,7 @@ h6 {
 }
 .inicio h2 {
   font-size: 100px;
+  font-weight: bold;
 }
 .inicio h2 .span-1 {
   margin: 0px 0px 0px 30px;
@@ -323,26 +324,6 @@ h6 {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
-}
-
-/* Courses */
-.courses {
-  height: 100vh;
-}
-.courses .titulo {
-  margin: 30px;
-}
-.courses .contenedor__foto {
-  width: 100%;
-  aspect-ratio: 4/3;
-  margin: 0px 30px 0px 30px;
-}
-.courses .contenedor__foto .foto {
-  width: 100%;
-  aspect-ratio: 4/3;
-}
-.courses .contenedor__foto .foto:hover {
-  scale: 1.05;
 }
 
 /* Works */
@@ -407,7 +388,48 @@ h6 {
 
 /* Mobile Mixins */
 /* 360px & 405px */
-@media screen and (min-width: 360px) and (max-width: 405px) {
+@media screen and (min-width: 360px) and (max-width: 390px) {
+  body {
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 100%;
+    grid-template-areas: "grid-1" "grid-3" "grid-4" "grid-5" "grid-6" "grid-8";
+  }
+  /* Header */
+  .header .header__contenedor .contenedor__logo {
+    margin: 10px 30px 10px 30px;
+  }
+  .header .header__contenedor .navbar {
+    margin: 0px 30px 30px 0px;
+  }
+  /* Inicio */
+  .inicio h2 {
+    font-size: 54px;
+  }
+  .inicio h2 .span-1 {
+    margin: 0px 30px 0px 30px;
+  }
+  .inicio h2 .span-2 {
+    margin: 0px 30px 0px 30px;
+  }
+  .inicio h3 {
+    font-size: 40px;
+  }
+  .inicio h3 .span-1 {
+    margin: 0px 30px 0px 30px;
+  }
+  .inicio h3 .span-2 {
+    margin: 0px 30px 0px 30px;
+  }
+  .header .header__contenedor .contenedor__links {
+    margin: 0px 30px 30px 30px;
+  }
+  /* Tools */
+  .tools .tools__contenedor .contenedor__foto {
+    width: 125px;
+  }
+}
+/* 391px & 491px */
+@media screen and (min-width: 391px) and (max-width: 491px) {
   body {
     grid-template-rows: repeat(6, auto);
     grid-template-columns: 100%;
@@ -422,7 +444,7 @@ h6 {
   }
   /* Inicio */
   .inicio h2 {
-    font-size: 55px;
+    font-size: 60px;
   }
   .inicio h2 .span-1 {
     margin: 0px 30px 0px 30px;
@@ -447,8 +469,8 @@ h6 {
     width: 125px;
   }
 }
-/* 406px & 491px */
-@media screen and (min-width: 406px) and (max-width: 491px) {
+/* 419px & 446px */
+@media screen and (min-width: 419px) and (max-width: 446px) {
   body {
     grid-template-rows: repeat(6, auto);
     grid-template-columns: 100%;
@@ -463,7 +485,7 @@ h6 {
   }
   /* Inicio */
   .inicio h2 {
-    font-size: 64px;
+    font-size: 4.0625rem;
   }
   .inicio h2 .span-1 {
     margin: 0px 30px 0px 30px;
@@ -472,7 +494,7 @@ h6 {
     margin: 0px 30px 0px 30px;
   }
   .inicio h3 {
-    font-size: 56px;
+    font-size: 50px;
   }
   .inicio h3 .span-1 {
     margin: 0px 30px 0px 30px;
@@ -488,49 +510,8 @@ h6 {
     width: 125px;
   }
 }
-/* 492px & 523px */
-@media screen and (min-width: 492px) and (max-width: 523px) {
-  body {
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: 100%;
-    grid-template-areas: "grid-1" "grid-3" "grid-4" "grid-5" "grid-6" "grid-8";
-  }
-  /* Header */
-  .header .header__contenedor .contenedor__logo {
-    margin: 10px 30px 10px 30px;
-  }
-  .header .header__contenedor .navbar {
-    margin: 0px 30px 30px 30px;
-  }
-  /* Inicio */
-  .inicio h2 {
-    font-size: 80px;
-  }
-  .inicio h2 .span-1 {
-    margin: 0px 30px 0px 30px;
-  }
-  .inicio h2 .span-2 {
-    margin: 0px 30px 0px 30px;
-  }
-  .inicio h3 {
-    font-size: 60px;
-  }
-  .inicio h3 .span-1 {
-    margin: 0px 30px 0px 30px;
-  }
-  .inicio h3 .span-2 {
-    margin: 0px 30px 0px 30px;
-  }
-  .header .header__contenedor .contenedor__links {
-    margin: 0px 30px 30px 30px;
-  }
-  /* Tools */
-  .tools .tools__contenedor .contenedor__foto {
-    width: 125px;
-  }
-}
-/* 524px & 545px */
-@media screen and (min-width: 524px) and (max-width: 545px) {
+/* 447px & 501px */
+@media screen and (min-width: 447px) and (max-width: 501px) {
   body {
     grid-template-rows: repeat(6, auto);
     grid-template-columns: 100%;
@@ -548,7 +529,7 @@ h6 {
   }
   /* Inicio */
   .inicio h2 {
-    font-size: 80px;
+    font-size: 4.375rem;
   }
   .inicio h2 .span-1 {
     margin: 0px 30px 0px 30px;
@@ -557,7 +538,7 @@ h6 {
     margin: 0px 30px 0px 30px;
   }
   .inicio h3 {
-    font-size: 60px;
+    font-size: 53px;
   }
   .inicio h3 .span-1 {
     margin: 0px 30px 0px 30px;
@@ -570,8 +551,8 @@ h6 {
     width: 125px;
   }
 }
-/* 546px & 588px */
-@media screen and (min-width: 546px) and (max-width: 588px) {
+/* 502px & 556px */
+@media screen and (min-width: 502px) and (max-width: 556px) {
   body {
     grid-template-rows: repeat(6, auto);
     grid-template-columns: 100%;
@@ -589,7 +570,7 @@ h6 {
   }
   /* Inicio */
   .inicio h2 {
-    font-size: 90px;
+    font-size: 5rem;
   }
   .inicio h2 .span-1 {
     margin: 0px 30px 0px 30px;
@@ -598,7 +579,7 @@ h6 {
     margin: 0px 30px 0px 30px;
   }
   .inicio h3 {
-    font-size: 70px;
+    font-size: 3.75rem;
   }
   .inicio h3 .span-1 {
     margin: 0px 30px 0px 30px;
@@ -607,8 +588,39 @@ h6 {
     margin: 0px 30px 0px 30px;
   }
 }
-/* 589px & 698px */
-@media screen and (min-width: 589px) and (max-width: 698px) {
+/* 557px & 611px */
+@media screen and (min-width: 557px) and (max-width: 611px) {
+  body {
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: 100%;
+    grid-template-areas: "grid-1" "grid-3" "grid-4" "grid-5" "grid-6" "grid-8";
+  }
+  /* Header */
+  .header .header__contenedor .navbar {
+    margin: 0px 30px 30px 30px;
+  }
+  /* Inicio */
+  .inicio h2 {
+    font-size: 5.625rem;
+  }
+  .inicio h2 .span-1 {
+    margin: 0px 30px 0px 30px;
+  }
+  .inicio h2 .span-2 {
+    margin: 0px 30px 0px 30px;
+  }
+  .inicio h3 {
+    font-size: 4.375rem;
+  }
+  .inicio h3 .span-1 {
+    margin: 0px 30px 0px 30px;
+  }
+  .inicio h3 .span-2 {
+    margin: 0px 30px 0px 30px;
+  }
+}
+/* 612px & 698px */
+@media screen and (min-width: 612px) and (max-width: 698px) {
   body {
     grid-template-rows: repeat(6, auto);
     grid-template-columns: 100%;

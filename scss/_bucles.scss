@@ -1,6 +1,6 @@
 /* Bucle For */
 
-@for $i from 1 through 8 {
+@for $i from 1 through 9 {
   .grid-#{$i} {
     grid-area: grid-#{$i};
     display: flex;

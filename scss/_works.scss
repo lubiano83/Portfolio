@@ -1,10 +1,9 @@
 /* Works */
 
 .works {
-    height: 100vh;
     position: static;
     z-index: 2;
-    min-height: auto;
+    min-height: 100vh;
     .titulo {
         margin: 30px;
     }

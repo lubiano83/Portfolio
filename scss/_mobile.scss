@@ -19,275 +19,190 @@
     }
 }
 
-/* 360px & 405px */
-@include mobile(360px, 390px) {
+/* 360px & 404px */
+@include mobile(360px, 404px) {
     /* Header */
     .header .header__contenedor .contenedor__logo {
         margin: 10px 30px 10px 30px;
     }
     .header .header__contenedor .navbar {
         margin: 0px 30px 30px 0px;
-      }
+    }
     /* Inicio */
     .inicio h2 {
-        font-size: 54px;
+        font-size: 30px;
     }
-    .inicio h2 .span-1 {
-        margin: 0px 30px 0px 30px;
+    .inicio h3 {
+        font-size: 24px;
     }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 30px;
+    .header .header__contenedor .contenedor__links {
+        margin: 0px 30px 30px 30px;
+    }
+    /* Tools */
+    .tools .tools__contenedor .contenedor__foto {
+        width: 125px;
+    }
+}
+
+/* 405px & 453px */
+@include mobile(405px, 453px) {
+
+    /* Header */
+    .header .header__contenedor .contenedor__logo {
+        margin: 10px 30px 10px 30px;
+    }
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 30px;
+    }
+    .header .header__contenedor .contenedor__links {
+        margin: 0px 30px 30px 30px;
+    }
+    /* Inicio */
+    .inicio h2 {
+        font-size: 35px;
+    }
+    .inicio h3 {
+        font-size: 28px;
+    }
+    /* Tools */
+    .tools .tools__contenedor .contenedor__foto {
+        width: 125px;
+    }
+}
+
+/* 454px & 552px */
+@include mobile(454px, 552px) {
+
+    /* Header */
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 30px;
+    }
+    .header .header__contenedor .contenedor__links {
+        margin: 0px 30px 30px 30px;
+    }
+    .header .header__contenedor .contenedor__logo {
+        margin: 10px 30px 10px 30px;
+    }
+    /* Inicio */
+    .inicio h2 {
+        font-size: 40px;
+    }
+    .inicio h3 {
+        font-size: 32px;
+    }
+    /* Tools */
+    .tools .tools__contenedor .contenedor__foto {
+        width: 125px;
+    }
+}
+
+/* 619px & 650px */
+@include mobile(553px, 618px) {
+    
+    /* Header */
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 30px;
+    }
+    .header .header__contenedor .contenedor__logo {
+        margin: 10px 30px 10px 30px;
+    }
+    .header .header__contenedor .contenedor__links {
+        margin: 0px 30px 30px 30px;
+    }
+    /* Inicio */
+    .inicio h2 {
+        font-size: 50px;
     }
     .inicio h3 {
         font-size: 40px;
     }
-    .inicio h3 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
-    .header .header__contenedor .contenedor__links {
-        margin: 0px 30px 30px 30px;
-    }
-    /* Tools */
-    .tools .tools__contenedor .contenedor__foto {
-        width: 125px;
-    }
 }
 
-/* 391px & 491px */
-@include mobile(391px, 491px) {
+/* 619px & 650px */
+@include mobile(619px, 650px) {
+
     /* Header */
-    .header .header__contenedor .contenedor__logo {
-        margin: 10px 30px 10px 30px;
-    }
     .header .header__contenedor .navbar {
         margin: 0px 30px 30px 30px;
     }
+    .header .header__contenedor .contenedor__logo {
+        margin: 10px 30px 10px 30px;
+    }
+    /* Inicio */
+    .inicio h2 {
+        font-size: 50px;
+    }
+    .inicio h3 {
+        font-size: 40px;
+    }
+}
+
+/* 651px & 698px */
+@include mobile(651px, 698px) {
+
+    /* Header */
+    .header .header__contenedor .navbar {
+        margin: 0px 30px 30px 0px;
+    }
+
     /* Inicio */
     .inicio h2 {
         font-size: 60px;
     }
-    .inicio h2 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
     .inicio h3 {
-        font-size: 45px;
-    }
-    .inicio h3 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
-    .header .header__contenedor .contenedor__links {
-        margin: 0px 30px 30px 30px;
-    }
-    /* Tools */
-    .tools .tools__contenedor .contenedor__foto {
-        width: 125px;
+        font-size: 48px;
     }
 }
 
-/* 419px & 446px */
-@include mobile(419px, 446px) {
-    /* Header */
-    .header .header__contenedor .contenedor__logo {
-        margin: 10px 30px 10px 30px;
-    }
-    .header .header__contenedor .navbar {
-        margin: 0px 30px 30px 30px;
-    }
+/* 699px & 748px */
+@include mobile(699px, 748px) {
+
     /* Inicio */
     .inicio h2 {
-        font-size: 4.0625rem;
-    }
-    .inicio h2 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 30px;
+        font-size: 60px;
     }
     .inicio h3 {
-        font-size: 50px;
-    }
-    .inicio h3 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
-    .header .header__contenedor .contenedor__links {
-        margin: 0px 30px 30px 30px;
-    }
-    /* Tools */
-    .tools .tools__contenedor .contenedor__foto {
-        width: 125px;
+        font-size: 48px;
     }
 }
 
-/* 447px & 501px */
-@include mobile(447px, 501px) {
-    /* Header */
-    .header .header__contenedor .navbar {
-        margin: 0px 30px 30px 30px;
-    }
-    .header .header__contenedor .contenedor__links {
-        margin: 0px 30px 30px 30px;
-    }
-    .header .header__contenedor .contenedor__logo {
-        margin: 10px 30px 10px 30px;
-    }
+/* 749px & 847px */
+@include mobile(749px, 847px) {
+
     /* Inicio */
     .inicio h2 {
-        font-size: 4.375rem;
-    }
-    .inicio h2 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 30px;
+        font-size: 70px;
     }
     .inicio h3 {
-        font-size: 53px;
-    }
-    .inicio h3 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
-    /* Tools */
-    .tools .tools__contenedor .contenedor__foto {
-        width: 125px;
+        font-size: 56px;
     }
 }
 
-/* 502px & 556px */
-@include mobile(502px, 556px) {
-    /* Header */
-    .header .header__contenedor .navbar {
-        margin: 0px 30px 30px 30px;
-    }
-    .header .header__contenedor .contenedor__links {
-        margin: 0px 30px 30px 30px;
-    }
-    .header .header__contenedor .contenedor__logo {
-        margin: 10px 30px 10px 30px;
-    }
+/* 848px & 946px */
+@include mobile(848px, 946px) {
     /* Inicio */
     .inicio h2 {
-        font-size: 5rem;
-    }
-    .inicio h2 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 30px;
+        font-size: 80px;
     }
     .inicio h3 {
-        font-size: 3.75rem;
-    }
-    .inicio h3 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-2 {
-        margin: 0px 30px 0px 30px;
+        font-size: 64px;
     }
 }
 
-/* 557px & 611px */
-@include mobile(557px, 611px) {
-    /* Header */
-    .header .header__contenedor .navbar {
-        margin: 0px 30px 30px 30px;
-    }
-    .header .header__contenedor .contenedor__links {
-        margin: 0px 30px 30px 30px;
-    }
+/* 946px & 1044px */
+@include mobile(946px, 1044px) {
     /* Inicio */
     .inicio h2 {
-        font-size: 5.625rem;
-    }
-    .inicio h2 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 30px;
+        font-size: 90px;
     }
     .inicio h3 {
-        font-size: 4.375rem;
-    }
-    .inicio h3 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-2 {
-        margin: 0px 30px 0px 30px;
+        font-size: 72px;
     }
 }
 
-/* 612px & 698px */
-@include mobile(612px, 698px) {
-    /* Header */
-    .header .header__contenedor .navbar {
-        margin: 0px 30px 30px 30px;
-      }
-    /* Inicio */
-    .inicio h2 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
-}
+/* 1045px & 1200px */
+@include mobile(1045px, 1200px) {
 
-/* 699px & 884px */
-@include mobile(699px, 884px) {
-    /* Inicio */
-    .inicio h2 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h3 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
-}
-
-/* 885px & 1021px */
-@include mobile(885px, 1021px) {
-    /* Inicio */
-    .inicio h2 .span-1 {
-        margin: 0px 30px 0px 30px;
-    }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 30px;
-    }
-}
-
-/* 1022px & 1200px */
-@include mobile(1022px, 1200px) {
-    /* Inicio */
-    .inicio h2 .span-1 {
-        margin: 0px 0px 0px 30px;
-    }
-    .inicio h2 .span-2 {
-        margin: 0px 30px 0px 0px;
-    }
 }
 
 /* The End By lubiano83 */

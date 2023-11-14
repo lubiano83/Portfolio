@@ -2,7 +2,7 @@
 
 .footer {
     background-color: map-get($colores, color-1);
-    position: static;
+    position: relative;
     z-index: 3;
     border-top: 1px solid map-get($colores, color-6);
     h4 {

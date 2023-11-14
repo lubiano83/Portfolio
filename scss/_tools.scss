@@ -4,7 +4,8 @@
     position: static;
     z-index: 2;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 1000px;
     flex: column wrap;
     .titulo {
         margin: 30px;

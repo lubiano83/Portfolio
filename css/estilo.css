@@ -271,6 +271,7 @@ h6 {
   position: static;
   z-index: 2;
   height: 100vh;
+  min-height: 800px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;

@@ -9,11 +9,12 @@
     flex: column wrap;
     .titulo {
         margin: 30px;
+        text-shadow: 15px 15px 15px map-get($colores, color-3);
     }
     .tools__contenedor {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         .contenedor__foto {
             margin: 0px 15px 30px 15px;
@@ -21,6 +22,7 @@
             min-width: 125px;
             width: 19%;
             aspect-ratio: 1/1;
+            text-shadow: 15px 15px 15px map-get($colores, color-3);
             .foto {
                 width: 100%;
                 aspect-ratio: 1/1;

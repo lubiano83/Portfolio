@@ -306,11 +306,12 @@ h6 {
 }
 .tools .titulo {
   margin: 30px;
+  text-shadow: 15px 15px 15px #4B4A54;
 }
 .tools .tools__contenedor {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .tools .tools__contenedor .contenedor__foto {
@@ -319,6 +320,7 @@ h6 {
   min-width: 125px;
   width: 19%;
   aspect-ratio: 1/1;
+  text-shadow: 15px 15px 15px #4B4A54;
 }
 .tools .tools__contenedor .contenedor__foto .foto {
   width: 100%;
@@ -335,6 +337,7 @@ h6 {
 }
 .works .titulo {
   margin: 30px;
+  text-shadow: 15px 15px 15px #4B4A54;
 }
 .works .works__contenedor {
   display: flex;
@@ -379,6 +382,7 @@ h6 {
 }
 .about .titulo {
   margin: 30px;
+  text-shadow: 15px 15px 15px #4B4A54;
 }
 .about .about__texto {
   width: 100%;

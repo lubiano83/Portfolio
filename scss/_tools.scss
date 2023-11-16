@@ -17,7 +17,9 @@
         align-items: center;
         .contenedor__foto {
             margin: 0px 15px 30px 15px;
-            width: 150px;
+            max-width: 225px;
+            min-width: 125px;
+            width: 19%;
             aspect-ratio: 1/1;
             .foto {
                 width: 100%;

@@ -7,14 +7,12 @@
     min-height: 800px;
     .titulo {
         margin: 30px;
-        text-shadow: 15px 15px 15px map-get($colores, color-3);
     }
     .about__texto {
         width: 100%;
         h5 {
             margin: 0px 30px 30px 30px;
             text-align: justify;
-            text-shadow: 15px 15px 15px map-get($colores, color-3);
         }
     }
 }

@@ -13,7 +13,7 @@
 /* Body */
 body {
   color: #A3CFCD;
-  background-color: #000000;
+  background-image: linear-gradient(to bottom, #000000, #0c0b0b, #141314, #1b191a, #211f21, #211f21, #211f21, #211f21, #1b191a, #141314, #0c0b0b, #000000);
   font-family: "Open Sans", sans-serif;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -156,51 +156,6 @@ h6 {
   }
 }
 /* Circulos */
-.circulos {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  filter: blur(5em);
-  animation: circulo1 30s linear infinite both;
-}
-.circulos .circulo {
-  position: absolute;
-  height: 50%;
-  width: 50%;
-  animation: circulo1 30s linear infinite both;
-}
-.circulos .circulo1 {
-  top: 0%;
-  left: 0%;
-}
-.circulos .circulo1 .path {
-  fill: #2A272A;
-}
-.circulos .circulo2 {
-  top: 0%;
-  right: 0%;
-}
-.circulos .circulo2 .path {
-  fill: #82A0AA;
-}
-.circulos .circulo3 {
-  bottom: 0%;
-  left: 0%;
-}
-.circulos .circulo3 .path {
-  fill: #677381;
-}
-.circulos .circulo4 {
-  bottom: 0%;
-  right: 0%;
-}
-.circulos .circulo4 .path {
-  fill: #4B4A54;
-}
-
 /* Header */
 .header {
   z-index: 3;
@@ -278,7 +233,6 @@ h6 {
   justify-content: center;
   align-items: center;
   margin: 30px 0px 30px 0px;
-  text-shadow: 15px 15px 15px #2A272A;
 }
 .inicio h2 {
   font-size: 100px;
@@ -306,7 +260,6 @@ h6 {
 }
 .tools .titulo {
   margin: 30px;
-  text-shadow: 15px 15px 15px #4B4A54;
 }
 .tools .tools__contenedor {
   display: flex;
@@ -325,7 +278,6 @@ h6 {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
-  box-shadow: 0px 0px 50px #4B4A54;
 }
 
 /* Works */
@@ -337,7 +289,6 @@ h6 {
 }
 .works .titulo {
   margin: 30px;
-  text-shadow: 15px 15px 15px #4B4A54;
 }
 .works .works__contenedor {
   display: flex;
@@ -354,7 +305,6 @@ h6 {
 .works .works__contenedor .contenedor__foto .foto {
   width: 100%;
   aspect-ratio: 1/2;
-  box-shadow: 0px 0px 50px #4B4A54;
 }
 .works .works__contenedor .contenedor__foto .foto:hover {
   scale: 1.05;
@@ -369,7 +319,6 @@ h6 {
   margin: 25px 5px 0px 5px;
   height: 50px;
   width: 50px;
-  box-shadow: 0px 0px 50px #4B4A54;
 }
 .works .works__contenedor .contenedor__foto .foto__tool .tool:hover {
   scale: 1.2;
@@ -384,7 +333,6 @@ h6 {
 }
 .about .titulo {
   margin: 30px;
-  text-shadow: 15px 15px 15px #4B4A54;
 }
 .about .about__texto {
   width: 100%;
@@ -392,7 +340,6 @@ h6 {
 .about .about__texto h5 {
   margin: 0px 30px 30px 30px;
   text-align: justify;
-  text-shadow: 15px 15px 15px #4B4A54;
 }
 
 /* Footer */

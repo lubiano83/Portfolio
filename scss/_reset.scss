@@ -11,7 +11,7 @@
 
 body {
     color: map-get($colores, color-6);
-    background-color: map-get($colores, color-1);
+    background-image: linear-gradient(to bottom, #000000, #0c0b0b, #141314, #1b191a, #211f21, #211f21, #211f21, #211f21, #1b191a, #141314, #0c0b0b, #000000);
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     text-align: center;

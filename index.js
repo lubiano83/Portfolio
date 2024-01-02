@@ -15,6 +15,7 @@ const NOMBRE = "José Pablo Lubiano";
 const CONTENEDOR_NOMBRE = document.getElementById("nombre");
 const CARGO = "Front-End Developer";
 const CONTENEDOR_CARGO = document.getElementById("cargo");
+const INTERVALO = 30000; // 30 segundos en milisegundos
 
 function escribirNombre(NOMBRE, index) {
     if (index < NOMBRE.length) {
@@ -22,11 +23,19 @@ function escribirNombre(NOMBRE, index) {
         index++;
         setTimeout(() => escribirNombre(NOMBRE, index), 100); // Cambia el tiempo de retraso aquí (en milisegundos)
     }
-}; escribirNombre(NOMBRE, 0);
+}
 function escribirCargo(CARGO, index) {
     if (index < CARGO.length) {
         CONTENEDOR_CARGO.innerHTML += CARGO.charAt(index);
         index++;
         setTimeout(() => escribirCargo(CARGO, index), 100); // Cambia el tiempo de retraso aquí (en milisegundos)
     }
-}; escribirCargo(CARGO, 0);
+}
+function reiniciarEscritura() {
+    CONTENEDOR_NOMBRE.innerHTML = "";
+    CONTENEDOR_CARGO.innerHTML = "";
+    escribirNombre(NOMBRE, 0);
+    setTimeout(() => escribirCargo(CARGO, 0), NOMBRE.length * 100); // Comienza a escribir el cargo después de terminar el nombre
+}
+setInterval(reiniciarEscritura, INTERVALO); // Iniciar la escritura cada 30 segundos
+reiniciarEscritura(); // Primera ejecución al cargar la página

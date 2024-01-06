@@ -283,43 +283,46 @@ h6 {
 .works {
   position: static;
   z-index: 2;
-  height: 100vh;
-  min-height: 800px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 .works .titulo {
   margin: 30px;
 }
-.works .works__contenedor {
+.works .all-works {
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
-.works .works__contenedor .contenedor__foto {
+.works .all-works .works__contenedor .contenedor__foto {
   width: 300px;
   margin: 0px 15px 0px 15px;
   aspect-ratio: 1/2;
   margin: 0px 15px 30px 15px;
 }
-.works .works__contenedor .contenedor__foto .foto {
+.works .all-works .works__contenedor .contenedor__foto .foto {
   width: 100%;
   aspect-ratio: 1/2;
 }
-.works .works__contenedor .contenedor__foto .foto:hover {
-  scale: 1.05;
+.works .all-works .works__contenedor .contenedor__foto .foto:hover {
+  scale: 1.02;
 }
-.works .works__contenedor .contenedor__foto .foto__tool {
+.works .all-works .works__contenedor .contenedor__foto .foto__tool {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
-.works .works__contenedor .contenedor__foto .foto__tool .tool {
-  margin: 25px 5px 0px 5px;
+.works .all-works .works__contenedor .contenedor__foto .foto__tool .tool {
+  margin: 10px 5px 30px 5px;
   height: 50px;
   width: 50px;
 }
-.works .works__contenedor .contenedor__foto .foto__tool .tool:hover {
+.works .all-works .works__contenedor .contenedor__foto .foto__tool .tool:hover {
   scale: 1.2;
 }
 
@@ -432,7 +435,7 @@ h6 {
     font-size: 32px;
   }
 }
-/* 619px & 650px */
+/* 553px & 618px */
 @media screen and (min-width: 553px) and (max-width: 618px) {
   body {
     grid-template-rows: repeat(6, auto);
